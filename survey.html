@@ -25,57 +25,82 @@
             <li><a href="index.html">home</a></li>
             <li><a href="links.html">links</a></li>
             <li><a href="glossary.html">glossary</a></li>
+            <li><a href="survey.html">survey</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <h1>Survey</h1>
-        <form>
-           <p>
+        <form action="https://formspree.io/f/mrgoejdl" method="POST">
+          <label>
+            Your email:
+            <input type="text" name="_replyto" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <p>
             <label for="name">What is your name?</label>
-            <input type="text" id="name" name="name_field" required>
-            </p>
-            <p>
+            <input type="text" id="name" name="name_field" required />
+          </p>
+          <p>
             <label for="email">What is your email?</label>
-            <input type="email" id="email" name="email_field" required>
-            </p>
-            <p>
+            <input type="email" id="email" name="email_field" required />
+          </p>
+          <p>
             <label for="number">Which whole number is best?</label>
-            <input type="number" id="number" name="best_whole_number" min="1">
-            </p>
-            <p>
+            <input type="number" id="number" name="best_whole_number" min="1" />
+          </p>
+          <p>
             <label for="date">Which day is best?</label>
-            <input type="date" id="date" name="best_day">
-            </p>
-            <p>
+            <input type="date" id="date" name="best_day" />
+          </p>
+          <p>
             <label for="bears">Which bear is best?</label>
             <select name="best_bear" id="bears">
-                <option value=""></option>
-                <option value="black">Black</option>
-                <option value="brown">Brown</option>
-                <option value="care">Care</option>
-                <option value="polar">Polar</option>
-                <option value="panda">Panda</option>
-                <option value="teddy">Teddy</option>
+              <option value=""></option>
+              <option value="black">Black</option>
+              <option value="brown">Brown</option>
+              <option value="care">Care</option>
+              <option value="polar">Polar</option>
+              <option value="panda">Panda</option>
+              <option value="teddy">Teddy</option>
             </select>
-            </p>
-            <fieldset>
-                <legend>Do you like radio buttons?</legend>
-                <ul>
-                    
-                    <li> <label for="yes">Yes</label><input type="radio" id="yes" name="radiolike" value="yes"></li>
+          </p>
+          <fieldset>
+            <legend>Do you like radio buttons?</legend>
+            <ul>
+              <li>
+                <label for="yes">Yes</label
+                ><input type="radio" id="yes" name="radiolike" value="yes" />
+              </li>
 
-                    <li><label for="no">No</label><input type="radio" id="no" name="radiolike" value="no"></li>
-                    
-                    <li><label for="none of your business">None of your business</label><input type="radio" id="none of your business" name="radiolike" value="?"></li>
-                        
-                </ul>
-            </fieldset>
-            <p>
-                <label for="meaning">What is the meaning of life?</label>
-                <textarea cols="50" rows="5"placeholder="enter the correct answer here"></textarea>
-            </p>
-            <button type="submit">Send</button>
+              <li>
+                <label for="no">No</label
+                ><input type="radio" id="no" name="radiolike" value="no" />
+              </li>
+
+              <li>
+                <label for="none_of_your_business">None of your business</label
+                ><input
+                  type="radio"
+                  id="none_of_your_business"
+                  name="radiolike"
+                  value="?"
+                />
+              </li>
+            </ul>
+          </fieldset>
+          <p>
+            <label for="meaning">What is the meaning of life?</label>
+            <textarea
+              cols="50"
+              rows="5"
+              placeholder="enter the correct answer here"
+            ></textarea>
+          </p>
+          <button type="submit">Submit</button>
         </form>
       </main>
       <footer>
