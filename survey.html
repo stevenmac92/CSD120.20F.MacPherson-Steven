@@ -41,12 +41,12 @@
             <textarea name="message"></textarea>
           </label>
           <p>
-            <label for="name" aria-label="required">What is your name?</label>
-            <input type="text" id="name" name="name_field"  />
+            <label for="name">What is your name?<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" id="name" name="name_field" required />
           </p>
           <p>
-            <label for="email" aria-label="required">What is your email?</label>
-            <input type="email" id="email" name="email_field" />
+            <label for="email">What is your email?<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="email" id="email" name="email_field" required/>
           </p>
           <p>
             <label for="number">Which whole number is best?</label>
@@ -57,9 +57,9 @@
             <input type="date" id="date" name="best_day" />
           </p>
           <p>
-            <label for="bears" aria-label="required">Which bear is best?</label>
-            <select name="best_bear" id="bears" >
-              <option value=""></option>
+            <label for="bears">Which bear is best?<abbr title="required" aria-label="required">*</abbr></label>
+            <select name="best_bear" id="bears" required>
+              <option value="">&nbsp;</option>
               <option value="black">Black</option>
               <option value="brown">Brown</option>
               <option value="care">Care</option>
@@ -88,6 +88,7 @@
                   id="none_of_your_business"
                   name="radiolike"
                   value="?"
+                  checked
                 />
               </li>
             </ul>
@@ -95,12 +96,16 @@
           <p>
             <label for="meaning">What is the meaning of life?</label>
             <textarea
+              name="life_meaning"
+              id="meaning"
               cols="50"
               rows="5"
               placeholder="enter the correct answer here"
             ></textarea>
           </p>
-          <button type="submit">Submit</button>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
         </form>
       </main>
       <footer>
