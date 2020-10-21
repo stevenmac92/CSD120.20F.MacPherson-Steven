@@ -1,0 +1,33 @@
+h1{
+    color: red;
+}
+li{
+    list-style-type: none;
+}
+.n2{
+    color: orange;
+    font-weight: bold;
+}
+p.n2{
+    color: blue;
+    
+}
+em{
+    font-size: 1.5em;
+}
+li em{
+    color: green;
+}
+h1 + p{
+    font-size: 200%;
+}
+a:link {
+    color: pink;
+}
+a:hover{
+    color: green;
+    text-decoration: none;
+}
+span{
+    font-size: 0.75em;
+}

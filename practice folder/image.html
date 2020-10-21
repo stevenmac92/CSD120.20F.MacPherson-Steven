@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="shape.svg" width="300" height="150" alt="blue circle with black box">
+    <img srcset="../images/dog.500px.jpg, ../images/dog.1024.jpg 2x"
+    src="../images/dog.1024.jpg" alt="cute puppy dog">
+    <picture>
+        <source srcset="../images/dog.500px.jpg" media="(max-width: 600px)">
+            <source srcset="../images/steven-image-original.jpg" width="1024px" media="(min-width: 601px)">
+                <img src="../images/steven-crop1-300w.jpg" alt="me!">
+    </picture>
 </body>
 </html>

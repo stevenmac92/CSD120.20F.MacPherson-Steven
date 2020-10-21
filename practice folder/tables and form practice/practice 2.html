@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>
+    <a href="http://saultcollege.ca">
+    <img src="../../images/sc-logo.png" alt="Sault College logo">
+</a>
+</p>
+<p>
+<form>
+<fieldset>
+    <legend>personal information</legend>
+    <p>
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name">
+</p>
+<p>
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" required>
+</p>
+<p>
+    <label for="telephone">phone number*</label>
+    <input type="tel" id="telephone" name="telephone" required>
+</p>
+<p>
+    <label for="date">date of birth</label>
+    <input type="date" id="date" name="date">
+    <input type="number" min="1" max="10" step="2" id="number" name="numberpicker">
+</p></fieldset>
+<fieldset>
+    <legend>preferences</legend>
+    <ul>
+    <li> <label for="pineapple">pineapple</label><input type="checkbox" id="pineapple" name="pizza_topping"></li>
+    <li><label for="sausage">sausage</label><input type="checkbox" id="sausage" name="pizza_topping"></li>
+    <li><label for="cheese">cheese</label><input type="checkbox" id="cheese" name="pizza_topping"></li>
+</ul>
+<ul>
+    <li><label for="math">math</label><input type="radio" id="math" name="classes"></li>
+    <li><label for="science">science</label><input type="radio" id="science" name="classes"></li>
+    <li><label for="socialstudies">social studies</label><input type="radio" id="socialstudies" name="classes"></li>
+</ul>
+<ul>
+<li><label for="vehicle">favorite type of vehicle?</label>
+<select id="vehicle" name="vehicle">
+    <option value=""></option>
+    <option value="car" selected>car</option>
+    <option value="truck">truck</option>
+    <option value="van">van</option>
+</select></li>
+</ul>
+</fieldset>
+<fieldset>
+    <legend>comments and suggestions</legend>
+    <p>
+    <label for="comments">comments here</label>
+    <textarea id="comments" name="comments" cols="50" rows="6"></textarea>
+</p></fieldset>
+<p><button type="reset">reset</button><button type="submit">submit</button>
+</p>
+</form>
+</p>
+</body>
+</html>
