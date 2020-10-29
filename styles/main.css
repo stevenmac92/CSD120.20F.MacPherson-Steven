@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
-  background-color:#BDFE00;
-  color:#160A63;
+  background-color: #bdfe00;
+  color: #160a63;
 }
 .width-wrap {
   max-width: 960px;
@@ -12,7 +12,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-top: none;
   margin-bottom: 3em;
-  background-color:#70FFDF;
+  background-color: #70ffdf;
 }
 hr {
   max-width: 890px;
@@ -25,70 +25,75 @@ hr {
 dt::after {
   content: ":";
 }
-h1, h2, h3{
-    color:#2F1DA0;
+h1,
+h2,
+h3 {
+  color: #2f1da0;
 }
 a {
-    color:#BDFE00;
+  color: #bdfe00;
 }
-header nav a{
-    color:#6B9000;
-    border-top: 4px solid rgba(186,250,0,0);
-    display: inline-block;
-    margin-top: -5px;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    margin-left: 1em;
-    margin-right: 1em;
+header nav a {
+  color: #6b9000;
+  border-top: 4px solid rgba(186, 250, 0, 0);
+  display: inline-block;
+  margin-top: -5px;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
-::selection{
-    background-color:#006C54;
-    color:white;
+::selection {
+  background-color: #006c54;
+  color: white;
 }
-header{
-    border-top: 4px solid rgba(0,0,0,0.1);
-    margin-left: -2em;
-    margin-right: -2em;
+header {
+  border-top: 4px solid rgba(0, 0, 0, 0.1);
+  margin-left: -2em;
+  margin-right: -2em;
 }
-header nav{
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
-    margin-left: 2em;
-    margin-right: 2em;
+header nav {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  margin-left: 2em;
+  margin-right: 2em;
 }
-header nav ul{
-    margin: 0;
-    padding: 0;
+header nav ul {
+  margin: 0;
+  padding: 0;
 }
-header li{
-    display: inline;
+header li {
+  display: inline;
 }
-header nav a:hover{
-    border-top: 4px solid rgba(186,250,0,1);
+header nav a:hover {
+  border-top: 4px solid rgba(186, 250, 0, 1);
 }
-th, td{
-    padding: 0.3em 1em;
+th,
+td {
+  padding: 0.3em 1em;
 }
-thead, tfoot, tbody th{
-    background-color: rgba(0,0,0,0.2);
+thead,
+tfoot,
+tbody th {
+  background-color: rgba(0, 0, 0, 0.2);
 }
-td{
-    background-color: rgba(0,0,0,0.05);
+td {
+  background-color: rgba(0, 0, 0, 0.05);
 }
-tbody tr:nth-child(even){
-    background-color: rgba(0,0,0,0.15);
+tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.15);
 }
-form label{
-    display: block;
+form label {
+  display: block;
 }
-form li label{
-    display: inline;
+form li label {
+  display: inline;
 }
-button[type="submit"]{
-    border: none;
-    padding: 1em 3em;
-    background-color: #BDFE00;
-    color: #006C54;
+button[type="submit"] {
+  border: none;
+  padding: 1em 3em;
+  background-color: #bdfe00;
+  color: #006c54;
 }
-input:invalid{
-    background-color: red;
+input:invalid {
+  background-color: red;
 }
