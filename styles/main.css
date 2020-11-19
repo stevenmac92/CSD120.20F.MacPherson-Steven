@@ -1,5 +1,13 @@
-body {
+html {
   box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
   background-color: #bdfe00;
   color: #160a63;
 }
@@ -17,9 +25,10 @@ body {
 hr {
   max-width: 890px;
   min-width: 300px;
-  width: 50%;
+  width: 50vw;
   margin-top: 3em;
   margin-bottom: 2em;
+  border: none;
   border-bottom: 3px dotted yellow;
 }
 dt::after {
@@ -37,7 +46,7 @@ header nav a {
   color: #6b9000;
   border-top: 4px solid rgba(186, 250, 0, 0);
   display: inline-block;
-  margin-top: -5px;
+  margin-top: -4px;
   padding-top: 1em;
   padding-bottom: 0.5em;
   margin-left: 1em;
@@ -76,8 +85,10 @@ th,
 td {
   padding: 0.3em 1em;
 }
-thead,
-tfoot,
+thead th,
+tfoot th,
+thead td,
+tfoot td,
 tbody th {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -85,7 +96,7 @@ td {
   background-color: rgba(0, 0, 0, 0.05);
   border-collapse: collapse;
 }
-tbody tr:nth-child(even) {
+tbody tr:nth-child(even) td {
   background-color: rgba(0, 0, 0, 0.15);
 }
 form label {
@@ -134,7 +145,7 @@ h1 {
     rgba(193, 47, 215, 1) 49%,
     rgba(253, 187, 45, 1) 100%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   font-size: 2em;
   -webkit-text-fill-color: transparent;
   background-size: 100%;
