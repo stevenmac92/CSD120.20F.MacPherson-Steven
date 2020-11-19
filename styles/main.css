@@ -165,6 +165,7 @@ img {
 }
 .me {
   padding: 2%;
+  background-color: #fff;
   box-shadow: 10px 15px 16px yellow;
 }
 footer {
