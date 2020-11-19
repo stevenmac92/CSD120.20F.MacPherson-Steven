@@ -145,7 +145,7 @@ h1 {
     rgba(193, 47, 215, 1) 49%,
     rgba(253, 187, 45, 1) 100%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   font-size: 2em;
   -webkit-text-fill-color: transparent;
   background-size: 100%;
