@@ -41,7 +41,12 @@ h3 {
 }
 a {
   color: #6b9000;
+  text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
+
 header nav a {
   color: #6b9000;
   border-top: 4px solid rgba(186, 250, 0, 0);
@@ -174,5 +179,7 @@ footer {
 }
 .top {
   text-shadow: 10px 15px 16px yellow;
+}
+.top:hover {
   text-decoration: none;
 }
