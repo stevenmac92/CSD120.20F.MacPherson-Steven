@@ -78,9 +78,11 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 header li {
-  display: inline;
+  list-style-type: none;
 }
 header nav a:hover {
   border-top: 4px solid rgba(186, 250, 0, 1);
@@ -182,4 +184,32 @@ footer {
 }
 .top:hover {
   text-decoration: none;
+}
+.favorites label + div{
+  display: none;
+}
+.favorites input:checked + label + div{
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  justify-content: center;
+  border: #006c54 2px solid;
+  border-radius: .5em;
+}
+.favorites input{
+  display: none;
+}
+.favorites{
+  display: flex;
+  flex-wrap: wrap;
+}
+.favorites label{
+  order: -1;
+  flex: 1;
+}
+.favorites input:checked + label h3{
+  color: darkgrey;
+}
+.favorites input:checked + label{
+  border: floralwhite 2px dotted;
 }
