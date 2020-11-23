@@ -41,7 +41,12 @@ h3 {
 }
 a {
   color: #6b9000;
+  text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
+
 header nav a {
   color: #6b9000;
   border-top: 4px solid rgba(186, 250, 0, 0);
@@ -94,7 +99,6 @@ tbody th {
 }
 td {
   background-color: rgba(0, 0, 0, 0.05);
-  border-collapse: collapse;
 }
 tbody tr:nth-child(even) td {
   background-color: rgba(0, 0, 0, 0.15);
@@ -156,6 +160,7 @@ h1 {
 }
 table {
   column-span: all;
+  border-collapse: collapse;
 }
 table caption {
   caption-side: bottom;
@@ -165,6 +170,7 @@ img {
 }
 .me {
   padding: 2%;
+  background-color: #fff;
   box-shadow: 10px 15px 16px yellow;
 }
 footer {
