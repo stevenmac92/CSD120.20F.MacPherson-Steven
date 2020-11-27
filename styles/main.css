@@ -181,35 +181,73 @@ footer {
 }
 .top {
   text-shadow: 10px 15px 16px yellow;
+  position: sticky;
+  margin-left: -25px;
+  bottom: 10px;
+  display: inline-block;
 }
 .top:hover {
   text-decoration: none;
+  transform: rotate(45deg);
 }
-.favorites label + div{
+.favorites label + div {
   display: none;
 }
-.favorites input:checked + label + div{
+.favorites input:checked + label + div {
   display: flex;
   width: 100%;
   background-color: #ffffff;
   justify-content: center;
   border: #006c54 2px solid;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
-.favorites input{
+.favorites input {
   display: none;
 }
-.favorites{
+.favorites {
   display: flex;
   flex-wrap: wrap;
 }
-.favorites label{
+.favorites label {
   order: -1;
   flex: 1;
 }
-.favorites input:checked + label h3{
+.favorites input:checked + label h3 {
   color: darkgrey;
 }
-.favorites input:checked + label{
+.favorites input:checked + label {
   border: floralwhite 2px dotted;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  gap: 10px;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row-span-2 {
+  grid-row: span 2;
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+.gallery a:hover {
+  transform: scale(1.1);
+}
+.paperclip {
+  background: none;
+  box-shadow: none;
+  width: 20%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.bio a {
+  display: block;
+  position: relative;
 }
