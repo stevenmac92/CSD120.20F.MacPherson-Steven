@@ -33,6 +33,20 @@
       footer {
         clear: both;
       }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      @media screen and (max-width: 525px) {
+        .left {
+          display: block;
+        }
+        .right {
+          display: block;
+        }
+      }
     </style>
   </head>
   <body>
@@ -40,6 +54,10 @@
       <header id="top">
         <!--found me-->
         <nav>
+          <input type="checkbox" id="menu-toggle" /><label
+            for="menu-toggle"
+            class="sandwich-icon"
+          ></label>
           <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="links.html">links</a></li>
@@ -66,9 +84,8 @@
 
         <p>
           <img
-            src="../images/kitties.jpg"
+            src="https://loremflickr.com/320/240"
             class="left"
-            style="float: left"
             alt="kittens"
           />Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper
           velit. Elementum sagittis vitae et leo. Quis hendrerit dolor magna
@@ -98,9 +115,8 @@
 
         <p>
           <img
-            src="../images/brazil.jpg"
+            src="https://loremflickr.com/320/240/beach"
             class="right"
-            style="float: right"
             alt="beachview"
           />Condimentum mattis pellentesque id nibh. Tellus elementum sagittis
           vitae et leo duis ut diam quam. Non odio euismod lacinia at quis.

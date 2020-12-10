@@ -151,13 +151,13 @@ h1 {
     rgba(193, 47, 215, 1) 49%,
     rgba(253, 187, 45, 1) 100%
   );
-  background-clip: text;
+  -webkit-background-clip: text;
   font-size: 2em;
   -webkit-text-fill-color: transparent;
   background-size: 100%;
 }
 .bio {
-  column-count: 3;
+  column-width: 13em;
   column-gap: 2em;
 }
 table {
@@ -185,6 +185,7 @@ footer {
   margin-left: -25px;
   bottom: 10px;
   display: inline-block;
+  transition: transform 200ms;
 }
 .top:hover {
   text-decoration: none;
@@ -220,7 +221,7 @@ footer {
 }
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   grid-gap: 10px;
   gap: 10px;
 }
@@ -236,6 +237,9 @@ footer {
 .col-span-2 {
   grid-column: span 2;
 }
+.gallery a {
+  transition: transform 200ms;
+}
 .gallery a:hover {
   transform: scale(1.1);
 }
@@ -244,10 +248,115 @@ footer {
   box-shadow: none;
   width: 20%;
   position: absolute;
-  right: -7px;
-  top: -7px;
+  right: -3%;
+  top: -3%;
 }
 .bio a {
-  display: block;
+  display: inline-block;
   position: relative;
+}
+#menu-toggle {
+  display: none;
+}
+.sandwich-icon {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .favourites {
+    flex-direction: column;
+    align-items: center;
+  }
+  .favourites label {
+    order: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 200ms;
+  }
+  header nav a {
+    padding-top: 0.5em;
+    border-top: none;
+  }
+  header nav a:hover {
+    border-top: none;
+    text-decoration: underline;
+  }
+  .sandwich-icon {
+    display: block;
+    width: 40px;
+    height: 25px;
+    border-top: 5px solid orange;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: transform 200ms;
+  }
+  .sandwich-icon::before,
+  .sandwich-icon::after {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 5px solid orange;
+    position: absolute;
+  }
+  .sandwich-icon::before {
+    top: 5px;
+    transition: opacity 200ms;
+  }
+  .sandwich-icon::after {
+    top: 15px;
+    transition: transform 200ms;
+  }
+  #menu-toggle:checked + .sandwich-icon + ul {
+    height: 250px;
+  }
+  #menu-toggle:checked + .sandwich-icon::before {
+    opacity: 0;
+  }
+  #menu-toggle:checked + .sandwich-icon {
+    transform: rotate(45deg) translate(10px, 18px);
+  }
+  #menu-toggle:checked + .sandwich-icon::after {
+    transform: rotate(-90deg) translate(20px, 0px);
+  }
+}
+@media only screen and (max-width: 450px) {
+  .col-span-2 {
+    grid-column: span 1;
+  }
+  .bio table thead,
+  .bio table tfoot,
+  .bio table th {
+    display: none;
+  }
+  .bio table td {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .bio table caption {
+    caption-side: top;
+  }
+  .bio table tr td:first-of-type {
+    padding-top: 0.3em;
+    font-weight: bold;
+  }
+  .bio table tr td:last-of-type {
+    padding-bottom: 0.3em;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  .bio table tr td:last-of-type::after {
+    content: " hours/week";
+  }
 }
